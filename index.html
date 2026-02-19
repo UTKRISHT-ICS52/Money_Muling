@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Money Mule Detection | RIFT 2026</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <h2>FinCrime AI</h2>
+  <div>
+    <a href="#upload">Upload</a>
+    <a href="#analysis">Analysis</a>
+    <a href="#results">Results</a>
+    <a href="#about">About</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <span class="badge">RIFT 2026 · Graph Theory Track</span>
+
+  <h1>
+    Money Mule Detection<br/>
+    <span class="highlight">Graph-Based Financial Crime Engine</span>
+  </h1>
+
+  <p>
+    Detect circular fund routing, smurfing, and layered shell networks
+    using transaction graphs and behavioral risk scoring.
+  </p>
+
+  <div class="hero-actions">
+    <a href="#upload" class="btn">Upload CSV</a>
+    <a href="#analysis" class="btn secondary">How It Works</a>
+  </div>
+
+  <div class="live-stats">
+    <div><strong id="txCount">0</strong><span>Transactions</span></div>
+    <div><strong id="susCount">0</strong><span>Suspicious Accounts</span></div>
+    <div><strong id="ringCount">0</strong><span>Fraud Rings</span></div>
+  </div>
+</section>
+
+<!-- UPLOAD -->
+<section class="section" id="upload">
+  <h2>Upload Transaction Dataset</h2>
+  <input type="file" id="csvFile" accept=".csv"/>
+  <button class="btn" onclick="processCSV()">Analyze Transactions</button>
+</section>
+
+<!-- ANALYSIS -->
+<section class="section" id="analysis">
+  <h2>Detection Methodology</h2>
+
+  <div class="timeline">
+    <div class="step"><span>1</span><p>Convert CSV into transaction graph</p></div>
+    <div class="step"><span>2</span><p>Detect circular fund routing (cycles)</p></div>
+    <div class="step"><span>3</span><p>Analyze fan-in / fan-out smurfing</p></div>
+    <div class="step"><span>4</span><p>Assign suspicion scores (0–100)</p></div>
+    <div class="step"><span>5</span><p>Generate investigator-ready outputs</p></div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="section" id="results">
+  <h2>Suspicious Accounts</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Account ID</th>
+        <th>Suspicion Score</th>
+        <th>Detected Pattern</th>
+      </tr>
+    </thead>
+    <tbody id="resultTable"></tbody>
+  </table>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <h2>About This Project</h2>
+  <p>
+    Financial crime has evolved beyond simple, rule-based fraud patterns. One of the most sophisticated and damaging techniques used today is money muling, where illicit funds are deliberately moved through networks of accounts to conceal their true origin. These networks often involve circular transfers, layered intermediaries, and high-velocity transaction flows that are extremely difficult to detect using traditional database queries or threshold-based monitoring systems.
+
+This project, Money Mule Detection – Graph-Based Financial Crime Engine, was developed as part of the RIFT 2026 Hackathon (Graph Theory / Financial Crime Detection Track) to address this challenge using graph analytics, temporal analysis, and explainable risk scoring.
+  </p>
+</section>
+
+<footer class="footer">
+  © 2026 FinCrime AI · Hackathon Prototype
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

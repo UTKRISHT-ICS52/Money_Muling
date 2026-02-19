@@ -1,0 +1,143 @@
+*{ box-sizing:border-box; }
+
+body{
+  margin:0;
+  font-family:Segoe UI, Arial, sans-serif;
+  background:#071347;
+   background-image: url("");
+  color:#e5e7eb;
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 50px;
+  background:#0b1220;
+}
+
+nav h2{ color:#38bdf8; }
+
+nav a{
+  color:#e5e7eb;
+  margin-left:25px;
+  text-decoration:none;
+}
+
+.hero{
+  padding:90px 50px;
+  max-width:1200px;
+  margin:auto;
+}
+
+.badge{
+  background:#0ea5e9;
+  color:#020617;
+  padding:6px 14px;
+  border-radius:20px;
+  font-weight:600;
+}
+
+.hero h1{
+  font-size:46px;
+  margin:20px 0;
+}
+
+.highlight{ color:#38bdf8; }
+
+.hero p{
+  max-width:650px;
+  color:#cbd5f5;
+  font-size:18px;
+}
+
+.hero-actions{
+  margin-top:30px;
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  padding:14px 28px;
+  background:#38bdf8;
+  color:#020617;
+  border-radius:6px;
+  font-weight:600;
+  text-decoration:none;
+  border:none;
+  cursor:pointer;
+}
+
+.btn.secondary{
+  background:transparent;
+  color:#38bdf8;
+  border:1px solid #38bdf8;
+}
+
+.live-stats{
+  margin-top:50px;
+  display:flex;
+  gap:40px;
+  flex-wrap:wrap;
+}
+
+.live-stats strong{
+  font-size:28px;
+  color:#38bdf8;
+}
+
+.section{
+  padding:70px 50px;
+  max-width:1200px;
+  margin:auto;
+}
+
+.timeline{ display:grid; gap:20px; }
+
+.step{
+  display:flex;
+  gap:20px;
+  background:#111827;
+  padding:20px;
+  border-radius:10px;
+}
+
+.step span{
+  width:40px;
+  height:40px;
+  background:#38bdf8;
+  color:#020617;
+  border-radius:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-weight:700;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:30px;
+}
+
+th,td{
+  padding:14px;
+  border-bottom:1px solid #1e293b;
+  text-align:left;
+}
+
+th{ color:#38bdf8; }
+
+.footer{
+  text-align:center;
+  padding:25px;
+  background:#020617;
+  color:#94a3b8;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .hero h1{ font-size:34px; }
+  nav{ flex-direction:column; gap:15px; }
+}
